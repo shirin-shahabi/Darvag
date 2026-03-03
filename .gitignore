@@ -1,0 +1,8 @@
+.env
+*.pem
+conduit-data/
+prometheus-data/
+grafana-data/
+secrets/
+*.log
+.DS_Store
