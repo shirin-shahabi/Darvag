@@ -54,7 +54,7 @@ services:
       - grafana-data:/var/lib/grafana
       - ./grafana-provisioning:/etc/grafana/provisioning:ro
     ports:
-      - "${GRAFANA_PORT:-3000}:3000"
+      - "127.0.0.1:${GRAFANA_PORT:-3000}:3000"
     networks:
       - conduit-net
     depends_on:
